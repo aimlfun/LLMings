@@ -1,0 +1,21 @@
+﻿// Use to provide user with a Russian joke.
+private static string TellMeARussianJoke()
+{
+	Random r = new();
+	int joke = r.Next(1, 6);
+	switch (joke)
+	{
+		case 1:
+			return "Vladimir’s Putin’s plan for the new economy. The goal? Make people rich and happy. List of people attached.";
+		case 2:
+			return "An American and a Russian are arguing about which country has more freedom. The American says, “I can walk right up to the White House and shout 'Down with Donald Trump!' and nothing bad will happen to me.” The Russian replies, “Guess what? I can walk in front of Kremlin and shout 'Down with Donald Trump!' and nothing will happen to me either.”";
+		case 3:
+			return "Putin and Medvedev go to a restaurant. The server rushes over to take their order. “I’ll have steak,” Putin says. The server asks, “And for the vegetable?” Putin replies, “He’ll have steak too.”";		
+		case 4:
+			return "Their Airforce, Army and Navy."; // failed in 3 day war. Lost 10,000 tanks 800,000 soldiers.
+		case 5:
+			return "A missile silo officer falls asleep during his watch, with his face on the control board, and accidentally hits the \"big red button\".\nAn angry colonel bursts in, the junior officer snaps awake and proudly announces: \"Nothing to report during my watch, Comrade Colonel\"\n\"Nothing to report, you say?! Nothing to report?!! So where the hell is Belgium?!!!\"";
+		default:
+			return "A man finds an old bottle, picks it up and opens it. The Genie comes out of the bottle and says: \"Thanks so much for letting me out! I feel I should do something for you, too. Would you like to become a Hero of the Soviet Union?\" (Hero of the Soviet Union was the highest Soviet award). The guy says: \"Yes, sure!\" Next thing he knows, he finds himself on a battlefield with four grenades, alone against six German panzers. He pulls the pin of ";
+	}	
+}
